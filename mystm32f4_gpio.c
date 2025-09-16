@@ -42,7 +42,7 @@
   ******************************************************************************
   */
 
-#include "stm32f4xx_gpio.h"
+#include "mystm32f4_gpio.h"
 #include "stm32f4xx_rcc.h"
 
 
@@ -640,3 +640,4 @@ void myGPIO_PinAFConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource, uint8_t GP
     /* ---------------- 设置该引脚的新 AF 配置 ---------------- */
     GPIOx->AFR[afr_index] |= ((uint32_t)GPIO_AF << afr_offset);
 }
+
