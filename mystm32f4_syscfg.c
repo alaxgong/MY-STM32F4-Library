@@ -326,8 +326,9 @@ void mySYSCFG_CompensationCellCmd(FunctionalState NewState)
   *        // 补偿单元已就绪，可以安全使用高速 GPIO
   *    }
   */
-FlagStatus SYSCFG_GetCompensationCellStatus(void)
+FlagStatus mySYSCFG_GetCompensationCellStatus(void)
 {
 	/* 使用三目运算符简化 if-else 判断 */
 	return ((SYSCFG->CMPCR & SYSCFG_CMPCR_READY) != 0) ? SET : RESET;
 }
+
