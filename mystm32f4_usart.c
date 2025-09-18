@@ -1,4 +1,4 @@
-#include "stm32f4xx_usart.h"
+#include "mystm32f4xx_usart.h"
 #include "stm32f4xx_rcc.h"
 
 /**
@@ -1355,3 +1355,4 @@ void myUSART_ClearITPendingBit(USART_TypeDef* USARTx, uint16_t USART_IT)
 	// 清除中断挂起位
 	USARTx->SR = (uint16_t)~itmask;  // 将 SR 寄存器中对应的中断标志位清零
 }
+
