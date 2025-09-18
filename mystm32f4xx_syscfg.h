@@ -9,6 +9,7 @@ void mySYSCFG_MemorySwappingBank(FunctionalState NewState);       // 切换内�
 void mySYSCFG_EXTILineConfig(uint8_t EXTI_PortSourceGPIOx,uint8_t EXTI_PinSourcex); // 将 GPIO 引脚映射到 EXTI 线路
 void mySYSCFG_CompensationCellCmd(FunctionalState NewState);      // 使能/关闭 I/O 补偿单元
 void mySYSCFG_ETH_MediaInterfaceConfig(uint32_t SYSCFG_ETH_MediaInterface); // 配置以太网接口模式 (MII/RMII)
-FlagStatus SYSCFG_GetCompensationCellStatus(void);                // 获取补偿单元是否就绪
+FlagStatus mySYSCFG_GetCompensationCellStatus(void);                // 获取补偿单元是否就绪
 
 #endif
+
